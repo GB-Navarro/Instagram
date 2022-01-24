@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #E5E5E5;
+}
+.flex{
+    display:flex;
+}
+.color1{
+    color:#8E8E8E;
+}
+.color2{
+    color:#262626;
+}
+.fontsize12{
+    font-size:12px;
+}
+.fontsize14{
+    font-size:14px;
+}
+
+/*---- Top ----*/
+.top{
+    width: 1366px;
+    height: 54px;
+    background-color: #FFFFFF;
+    position:fixed;
+    top:0;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #DBDBDB;
+}
+.topleft{
+    margin-top:15px;
+    margin-bottom:10px;
+}
+.topmid{
+    width: 215px;
+    height: 28px;
+    border:1px solid #DBDBDB;
+    justify-content: center;
+    align-items: center;
+}
+.topright{
+    margin-top:23px;
+    margin-bottom:18px;
+}
+.mobileicon{
+    margin-right: 15px;
+}
+.nonmobileicon1{
+    margin-right: 15px;
+}
+.nonmobileicon2{
+    margin-right: 15px;
+}
+.nonmobileicon3{
+    margin-right: 15px;
+}
+.iconeinstagram{
+    height: 22px;
+    margin-right: 10px;
+    border-right: 1px solid #DBDBDB;
+    padding-right: 11.38px;
+    align-items: center;
+}
+/*-------------*/
+
+/*-------------- Container --------------*/
+.container{
+    margin-top:100px;
+}
+
+/*-------------- Main --------------*/
+.maincontent{
+    width: 614px;
+    margin-left: 210px;
+    background-color: #FFFFFF;
+}
+
+/*---- Stories ----*/
+.stories{
+    width: 615px;
+    height: 118px;
+    background-color: #FFFFFF;
+    margin-bottom:24px;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    border: 1px solid #DBDBDB;
+}
+.stories div img{
+    background-image: url(stories_background.jpg);
+}
+.storiesbuttom{
+    z-index: 1;
+    position:absolute;
+    right: 17px;
+}
+/*-----------------*/
+
+/*---- Feed ----*/
+.feed{
+    background-color: #FFFFFF;
+}
+.post{
+    width: 615px;
+    height: 749px;
+    margin-bottom:60px;
+    border: 1px solid #DBDBDB;
+}
+.topbar{
+    width: 614px;
+    height: 61px;
+    align-items: center;
+    justify-content: space-between;
+}
+.topbar img{
+    width: 32px;
+    height: 32px;
+    margin-left:17px;
+}
+.topbar p{
+    margin-left: 15px;
+    margin-top:6px;
+}
+.toprightside {
+    margin-right: 17px;
+    margin-top: 7px;
+}
+.bottombar{
+    width: 614px;
+    height: 76px;
+}
+.iconesbottombar{
+    justify-content: space-between;
+    margin-top:14px;
+}
+.iconesbottombarleft{
+    margin-left: 18px;
+}
+.iconesbottombarright{
+    margin-right: 18px;
+}
+.likedby{
+    margin-top:14px;
+}
+.likedby img{
+    margin-right: 5px;
+    margin-left:17px;
+}
+.likedby p{
+    margin-top: 2px;
+    color:#000000;
+}
+/*--------------*/
+
+/*----------------------------------*/
+/*---------------------------------------------*/
+
+/*---- Sidebar ----*/
+.sidebar{
+    width: 293px;
+    height: 443px;
+    background-color: #E5E5E5;
+    position:fixed;
+    top: 135px;
+    right: 200px;
+}
+.perfil{
+    margin-bottom:24px;
+}
+.perfil img{
+    margin-right: 17px;
+}
+.name{
+    margin-top:10px
+}
+.sugestionsforyou{
+    justify-content: space-between;
+}
+.sugestionsforyoutext{
+    justify-content: space-between;
+    margin-bottom:18px; 
+    font-size: 12px;
+}
+.sugestionsforyou div img{
+    margin-right: 11px;
+    margin-bottom:11px;
+}
+.sugestions{
+    margin-bottom:33px;
+}
+.otherlinks{
+    flex-wrap: wrap;
+    margin-bottom:18px;
+}
+.otherlinks p{
+    font-size: 11px;
+    font-weight: 400;
+    color:#c7c7c7;
+}
+.copyright{
+    font-size:11px;
+    color:#c7c7c7;
+}
+.follow{
+    font-size: 12px;
+    color:#139EF2;
+}
+/*-----------------*/
+
+/*------ Demais layouts ------*/
+@media (max-width: 935px){
+    .top{
+        width: 935px;
+    }
+    .sidebar{
+        display:none;
+    }
+    .maincontent{
+        margin:auto;
+    }
+
+}
+@media (max-width: 614px){
+    .top{
+        width: 614px;
+    }
+    .iconeinstagram{
+        display:none;
+    }
+    .sidebar{
+        display:none;
+    }
+    .storiesbuttom{
+        display:none;
+    }
+    .topmid{
+        display:none;
+    }
+    .nonmobileicon1{
+        display:none;
+    }
+    .nonmobileicon2{
+        display:none;
+    }
+    .nonmobileicon3{
+        display:none;
+    }
+}
+/*-----------------------------*/

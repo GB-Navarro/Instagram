@@ -106,6 +106,8 @@ body{
     border-top: 1px solid #DBDBDB;
     border-left: 1px solid #DBDBDB;
     border-right: 1px solid #DBDBDB;
+    overflow: hidden;
+    padding-left:10px;
 }
 .storie{
     background-image: url(stories_background.jpg);
@@ -115,6 +117,7 @@ body{
     align-items: center;
     justify-content: center;
     background-size: 66px 66px;
+    border-radius: 50%;
 }
 .storiesbuttom{
     z-index: 1;
@@ -275,6 +278,12 @@ body{
     }
     .iconeinstagram{
         border: 0 solid #DBDBDB;
+    }
+    .topleft img{
+        margin-left:188px;
+    }
+    .mobileicon{
+
     }
     .sidebar{
         display:none;

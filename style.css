@@ -22,7 +22,18 @@ body{
 .fontsize14{
     font-size:14px;
 }
-
+.svgsize1{
+    width: 19.25px;
+    height: 19.25px;
+}
+.svgsize2{
+    width:17.87px;
+    height: 17.87px;
+}
+.svgsize3{
+    width: 24px;
+    height: 24px;
+}
 /*---- Top ----*/
 .top{
     width: 1366px;
@@ -33,6 +44,7 @@ body{
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #DBDBDB;
+    z-index:2;
 }
 .topleft{
     margin-top:15px;
@@ -44,6 +56,7 @@ body{
     border:1px solid #DBDBDB;
     justify-content: center;
     align-items: center;
+    background-color: #FAFAFA;
 }
 .topright{
     margin-top:23px;
@@ -87,14 +100,21 @@ body{
     width: 615px;
     height: 118px;
     background-color: #FFFFFF;
-    margin-bottom:24px;
     justify-content: space-around;
     align-items: center;
     position: relative;
-    border: 1px solid #DBDBDB;
+    border-top: 1px solid #DBDBDB;
+    border-left: 1px solid #DBDBDB;
+    border-right: 1px solid #DBDBDB;
 }
-.stories div img{
+.storie{
     background-image: url(stories_background.jpg);
+    width: 66px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 66px 66px;
 }
 .storiesbuttom{
     z-index: 1;
@@ -102,7 +122,20 @@ body{
     right: 17px;
 }
 /*-----------------*/
-
+.divider1{
+    width: 615px;
+    height: 24px;
+    background-color: #E5E5E5;
+    border-top: 1px solid #DBDBDB;
+    border-bottom:1px solid #DBDBDB;
+}
+.divider2{
+    width: 615px;
+    height: 60px;
+    background-color: #E5E5E5;
+    border-top: 1px solid #DBDBDB;
+    border-bottom:1px solid #DBDBDB;
+}
 /*---- Feed ----*/
 .feed{
     background-color: #FFFFFF;
@@ -110,8 +143,9 @@ body{
 .post{
     width: 615px;
     height: 749px;
-    margin-bottom:60px;
-    border: 1px solid #DBDBDB;
+    margin-bottom:14px;
+    border-left: 1px solid #DBDBDB;
+    border-right: 1px solid #DBDBDB;
 }
 .topbar{
     width: 614px;
@@ -170,6 +204,7 @@ body{
     position:fixed;
     top: 135px;
     right: 200px;
+    z-index:-1;
 }
 .perfil{
     margin-bottom:24px;
@@ -218,6 +253,13 @@ body{
 @media (max-width: 935px){
     .top{
         width: 935px;
+        justify-content: space-between;
+    }
+    .topleft{
+        margin-left: 20px;
+    }
+    .topright{
+        margin-right: 18px;
     }
     .sidebar{
         display:none;
@@ -232,10 +274,13 @@ body{
         width: 614px;
     }
     .iconeinstagram{
-        display:none;
+        border: 0 solid #DBDBDB;
     }
     .sidebar{
         display:none;
+    }
+    .stories{
+        background-color: #E5E5E5;
     }
     .storiesbuttom{
         display:none;
@@ -251,6 +296,12 @@ body{
     }
     .nonmobileicon3{
         display:none;
+    }
+    .divider1{
+        display:none;
+    }
+    .container{
+        margin-top: 50px;
     }
 }
 /*-----------------------------*/
